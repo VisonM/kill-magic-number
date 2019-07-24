@@ -11,32 +11,50 @@
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
   <link rel="stylesheet" href="//unpkg.com/vuep/dist/vuep.css">
   <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <style>
+    main {
+      z-index: auto !important;
+    }
+
+    .markdown-section {
+      max-width: none !important;
+    }
+  </style>
 </head>
 
 <body>
   <nav>
-    <a href="#/">EN</a>
-    <a href="#/zh-cn/">中文</a>
+    <a href="#/">Cover</a>
   </nav>
   <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: '',
-      repo: '',
-      coverpage: true,
-      loadNavbar: true,
-      loadSidebar: true,
-      subMaxLevel: 2
-    }
-  </script>
-  <script type="module">
-    import LabelArray from './data-dictionary/label-array.js'
-  </script>
-
   <script src="//unpkg.com/vue/dist/vue.min.js"></script>
   <script src="//unpkg.com/vuep/dist/vuep.min.js"></script>
   <script src="https://unpkg.com/element-ui/lib/index.js"></script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js" data-coverpage data-router></script>
+  <script>
+    window.$docsify = {
+      name: 'label-array',
+      repo: 'http://gitlab.repos.suv163.com/fe-discussion/magic-number',
+      coverpage: true,
+      loadSidebar: true,
+      subMaxLevel: 2
+    }
+    /**
+     * 每次 getUuid() 返回一个对于项目全局唯一的id:
+     */
+    const getUuid = (() => {
+      let uuid = 0
+      return function () {
+        return ++uuid
+      }
+    })()
+
+    Vue.prototype.$getUuid = getUuid
+  </script>
+  <script type="module">
+    import LabelArray from './data-dictionary/label-array.js'
+    window.LabelArray=LabelArray
+  </script>
 </body>
 
 </html>

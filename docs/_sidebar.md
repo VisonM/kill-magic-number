@@ -1,4 +1,6 @@
-- [基础](zh-cn/)
-- [扩展](zh-cn/guide)
-- [高级选项](zh-cn/guide)
-- [更多](zh-cn/guide)
+- [开发指南](zh-cn/quickstart.md)
+- 基础
+  - [属性访问](zh-cn/labels.md)
+  - [方法](zh-cn/tolabel.md)
+- [高级选项](zh-cn/advanced.md)
+- [更多](zh-cn/more.md)
