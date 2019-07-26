@@ -1,5 +1,5 @@
 - [开发指南](zh-cn/quickstart.md)
-- 基础
+- API
   - [属性访问](zh-cn/labels.md)
   - [方法](zh-cn/tolabel.md)
 - [高级选项](zh-cn/advanced.md)

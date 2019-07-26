@@ -16,12 +16,12 @@
 
 - options
   
-| 参数         | 说明 | 类型    | 可选值 | 必传 | 默认值 |
-| ------------ | ---- | ------- | ------ | ---- | ------ |
-| valueKey     | 尺寸 | string  | -      | 否   | —      |
-| labelKey     | 尺寸 | string  | -      | 否   | —      |
-| deleteOldKey | 尺寸 | boolean | -      | 否   | —      |
-| copyAlias    | 尺寸 | boolean | -      | 否   | —      |
+| 参数         | 说明                             | 类型    | 可选值 | 必传 | 默认值 |
+| ------------ | -------------------------------- | ------- | ------ | ---- | ------ |
+| valueKey     | 指定哪个属性作为value            | string  | -      | 否   | —      |
+| labelKey     | 指定哪个属性作为label            | string  | -      | 否   | —      |
+| deleteOldKey | 是否删除旧的key                  | boolean | -      | 否   | -      |
+| copyAlias    | 是否将别名直接挂载到实例下来访问 | boolean | -      | 否   | true   |
 
 
 ### 使用示例
