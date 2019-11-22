@@ -1,3 +1,5 @@
+# author:zhongzhaocong
+
 # 什么是magic number
 > magic number特指代表特定含义的代码中的数字。消除magic number的目的，在于提高代码的可维护性，消除令人费解的代码含义。
 
